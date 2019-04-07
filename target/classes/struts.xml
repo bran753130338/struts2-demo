@@ -7,7 +7,7 @@
 	<!-- i18n:国际化. 解决post提交乱码 -->
 	<constant name="struts.i18n.encoding" value="UTF-8"></constant>
 	<!-- 指定反问action时的后缀名 
-		http://localhost:8080/struts2_day01/hello/HelloAction.do
+		http://localhost:8080/struts2_day01/hello/HelloAction.action
 	-->
 	<constant name="struts.action.extension" value="action"></constant>
 	<!-- 指定struts2是否以开发模式运行
@@ -21,7 +21,7 @@
 			extends属性: 继承一个 指定包
 			abstract属性:包是否为抽象的; 标识性属性.标识该包不能独立运行.专门被继承
 	  -->
-	<package name="hello" namespace="/hello" extends="struts-default" >
+	<package name="hello" namespace="/hello" extends="struts-default">
 		<!-- action元素:配置action类
 				name属性: 决定了Action访问资源名.
 				class属性: action的完整类名
@@ -36,5 +36,7 @@
 			<result name="success">/hello.jsp</result>
 		</action>
 	</package>
-
+	<!-- 引入其他struts2配置文件 -->
+	<include file="/com/bran/dynamic/struts.xml"></include>
+	<include file="/com/bran/c_default/struts.xml"></include>
 </struts>

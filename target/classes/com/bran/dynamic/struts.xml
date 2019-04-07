@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+	"http://struts.apache.org/dtds/struts-2.5.dtd">
+<struts>
+	<!-- 配置动态方法调用常量 
+		默认是关闭
+	-->
+	<constant name="struts.enable.DynamicMethodInvocation" value="false"></constant>
+	<package name="dynamic" namespace="/dynamic" extends="struts-default" strict-method-invocation="false">
+		<action name="Demo1Action_*" class="com.bran.dynamic.Demo1Action" method="{1}">
+			<result name="success">/hello.jsp</result>
+		</action>
+	</package>
+	
+
+</struts>
