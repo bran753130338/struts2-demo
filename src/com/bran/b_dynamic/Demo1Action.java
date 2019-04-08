@@ -1,4 +1,4 @@
-package com.bran.dynamic;
+package com.bran.b_dynamic;
 
 //测试动态方法调用
 public class Demo1Action {

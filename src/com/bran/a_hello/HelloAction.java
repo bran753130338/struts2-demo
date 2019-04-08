@@ -1,4 +1,4 @@
-package com.bran.demo;
+package com.bran.a_hello;
 
 //测试类
 public class HelloAction {
