@@ -8,7 +8,7 @@
 	-->
 	<constant name="struts.enable.DynamicMethodInvocation" value="false"></constant>
 	<package name="dynamic" namespace="/dynamic" extends="struts-default" strict-method-invocation="false">
-		<action name="Demo1Action_*" class="com.bran.dynamic.Demo1Action" method="{1}">
+		<action name="Demo1Action_*" class="com.bran.b_dynamic.Demo1Action" method="{1}">
 			<result name="success">/hello.jsp</result>
 		</action>
 	</package>

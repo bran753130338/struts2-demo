@@ -27,7 +27,7 @@
 				class属性: action的完整类名
 				method属性: 指定调用Action中的哪个方法来处理请求
 		 -->
-		<action name="HelloAction" class="com.bran.demo.HelloAction" method="hello">
+		<action name="HelloAction" class="com.bran.a_hello.HelloAction" method="hello">
 		<!-- result元素:结果配置 
 					name属性: 标识结果处理的名称.与action方法的返回值对应.
 					type属性: 指定调用哪一个result类来处理结果,默认使用转发.
@@ -37,6 +37,7 @@
 		</action>
 	</package>
 	<!-- 引入其他struts2配置文件 -->
-	<include file="/com/bran/dynamic/struts.xml"></include>
+	<include file="/com/bran/b_dynamic/struts.xml"></include>
 	<include file="/com/bran/c_default/struts.xml"></include>
+	<include file="/com/bran/e_result/struts.xml"></include>
 </struts>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+	"http://struts.apache.org/dtds/struts-2.5.dtd">
+<struts>
+	<package name="result" namespace="/" extends="struts-default">
+		<!-- 转发 -->
+		<action name="DispatcherAction"
+			class="com.bran.e_result.DispatcherAction" method="execute">
+			<result name="success" type="dispatcher">/result.jsp</result>
+		</action>
+		<!-- 重定向 -->
+		<action name="RedirectAction"
+			class="com.bran.e_result.RedirectAction" method="execute">
+			<result name="success" type="redirect">/result.jsp</result>
+		</action>
+		<!-- 转发到Action -->
+		<action name="ChainAction"
+			class="com.bran.e_result.ChainAction" method="execute">
+			<result name="success" type="chain">
+				<!-- Action的名字 -->
+				<param name="actionName">DispatcherAction</param>
+				<!-- Action所在的命名空间 -->
+				<param name="namespace">/</param>
+			</result>
+		</action>
+		<!-- 重定向到Action -->
+		<action name="RedirectAction2"
+			class="com.bran.e_result.RedirectAction2" method="execute">
+			<result name="success" type="redirectAction">
+				<!-- Action的名字 -->
+				<param name="actionName">DispatcherAction</param>
+				<!-- Action所在的命名空间 -->
+				<param name="namespace">/</param>
+			</result>
+		</action>
+	</package>
+</struts>
