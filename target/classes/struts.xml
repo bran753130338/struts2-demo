@@ -40,4 +40,5 @@
 	<include file="/com/bran/b_dynamic/struts.xml"></include>
 	<include file="/com/bran/c_default/struts.xml"></include>
 	<include file="/com/bran/e_result/struts.xml"></include>
+	<include file="/com/bran/f_servletapi/struts.xml"></include>
 </struts>
