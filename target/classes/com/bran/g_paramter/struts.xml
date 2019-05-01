@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+	"http://struts.apache.org/dtds/struts-2.5.dtd">
+<struts>
+	<package name="paramter" namespace="/" extends="struts-default">
+		<action name="ParamterAction"
+			class="com.bran.g_paramter.ParamterAction" method="execute">
+			<result name="success" type="dispatcher">/form/form1.jsp</result>
+		</action>
+		<action name="Paramter2Action"
+			class="com.bran.g_paramter.Paramter2Action" method="execute">
+			<result name="success" type="dispatcher">/form/form2.jsp</result>
+		</action>
+		<action name="Paramter3Action"
+			class="com.bran.g_paramter.Paramter3Action" method="execute">
+			<result name="success" type="dispatcher">/form/form3.jsp</result>
+		</action>
+		<action name="ParamterListAction"
+			class="com.bran.g_paramter.ParamterListAction" method="execute">
+			<result name="success" type="dispatcher">/form/form4.jsp</result>
+		</action>
+	</package>
+</struts>

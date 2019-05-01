@@ -9,7 +9,7 @@
 	<!-- 指定反问action时的后缀名 
 		http://localhost:8080/struts2_day01/hello/HelloAction.action
 	-->
-	<constant name="struts.action.extension" value="action"></constant>
+	<!-- <constant name="struts.action.extension" value="action"></constant> -->
 	<!-- 指定struts2是否以开发模式运行
 			1.热加载主配置.(不需要重启即可生效)
 			2.提供更多错误信息输出,方便开发时的调试
@@ -41,4 +41,6 @@
 	<include file="/com/bran/c_default/struts.xml"></include>
 	<include file="/com/bran/e_result/struts.xml"></include>
 	<include file="/com/bran/f_servletapi/struts.xml"></include>
+	<include file="/com/bran/g_paramter/struts.xml"></include>
+	<include file="/com/bran/h_showvs/struts.xml"></include>
 </struts>
